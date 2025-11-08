@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>กิจกรรม - วัดเขาตะเกียบ</title>
+  <style>
+    :root {
+      --pale-yellow: #fff9e6;
+      --accent: #d9c37a;
+      --text: #222;
+      --muted: #555;
+      --max-width: 1100px;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "Noto Sans Thai", "Helvetica", Arial, sans-serif;
+      color: var(--text);
+      background: var(--pale-yellow);
+    }
+    .wrap {
+      max-width: var(--max-width);
+      margin: 24px auto;
+      background: rgba(255,255,255,0.6);
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+    }
+    header {
+      display: flex;
+      flex-direction: column;
+      padding: 18px 24px;
+      background: linear-gradient(180deg,var(--pale-yellow),#fff);
+      border-bottom: 1px solid rgba(0,0,0,0.04);
+    }
+    .top-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .site-title {
+      font-weight: 700;
+      font-size: 26px;
+      cursor: pointer;
+      color: var(--text);
+    }
+    nav {
+      display: flex;
+      justify-content: flex-end;
+      gap: 15px;
+      margin-top: 10px;
+    }
+    nav a {
+      text-decoration: none;
+      color: var(--text);
+      font-weight: 600;
+      padding: 6px 12px;
+      border-radius: 6px;
+    }
+    nav a:hover { background: rgba(217,195,122,0.3); }
+
+    .banner img { width: 100%; height: 100%; }
+
+    section { padding: 30px; }
+    h2 {
+      text-align: center;
+      color: #004aad;
+      background: #cfe2ff;
+      padding: 10px;
+      border-radius: 8px;
+    }
+
+    .image-left, .image-right {
+      display: flex;
+      align-items: flex-start;
+      margin-bottom: 25px;
+      gap: 20px;
+    }
+    .image-left img, .image-right img {
+      width: 45%;
+      border-radius: 10px;
+      object-fit: cover;
+    }
+    .image-left img { order: 1; }
+    .image-right img { order: 2; }
+    .text { width: 55%; line-height: 1.7; font-size: 16px; color: var(--muted); }
+
+    footer {
+      background: #fff;
+      border-top: 1px solid rgba(0,0,0,0.04);
+      padding: 10px 24px;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      color: var(--muted);
+      font-size: 14px;
+      line-height: 1.3;
+    }
+
+    @media (max-width: 900px) {
+      .image-left, .image-right {
+        flex-direction: column;
+      }
+      .image-left img, .image-right img, .text {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="top-row">
+        <div class="site-title" onclick="location.href='วัดเขา.html'">วัดเขาตะเกียบ</div>
+        <nav>
+          <a href="วัดเขา.html">หน้าแรก</a>
+          <a href="ประวัติ.html">ประวัติ</a>
+          <a href="สถานสำ.html">สถานที่สำคัญ</a>
+          <a href="ความสำ.html">ความสำคัญ</a>
+          <a href="กิจกรรม.html">กิจกรรม</a>
+          <a href="เดินทาง.html">การเดินทาง</a>
+          <a href="ท่องเที่ยว.html">สถานที่ท่องเที่ยว</a>
+        </nav>
+      </div>
+    </header>
+
+    <div class="banner">
+      <img src="img/bnสถานสำ.png" alt="แบนเนอร์กิจกรรม">
+    </div>
+
+    <!-- พระพุทธรูปองค์ใหญ่ -->
+    <section>
+      <h2>พระพุทธรูปองค์ใหญ่</h2>
+      <div class="image-left">
+        <img src="img/องค์ใหญ่.jpg" alt="พระพุทธรูปองค์ใหญ่">
+        <div class="text">
+          <p><b>พระพุทธรูปปางห้ามสมุทร</b> ... (ข้อความเดิมทั้งหมด)</p>
+        </div>
+      </div>
+      <div class="image-left">
+        <img src="img/วิวองค์ใหญ่.jpg" alt="วิวรอบพระใหญ่">
+        <div class="text">
+          <p>ภาพบรรยากาศโดยรอบองค์พระใหญ่และวิวทะเลหัวหิน ...</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- สิ่งศักดิ์สิทธิ์บนยอดเขา -->
+    <section>
+      <h2>สิ่งศักดิ์สิทธิ์บนยอดเขา</h2>
+      <div class="image-left">
+        <img src="img/เขี้ยวแก้ว.jpg" alt="พระเขี้ยวแก้ว">
+        <div class="text">
+          <p><b>พระเขี้ยวแก้ว</b><br> ... (เนื้อหาตามต้นฉบับ)</p>
+        </div>
+      </div>
+      <div class="image-left">
+        <img src="img/กวน.jpg" alt="เจ้าแม่กวนอิมพันมือ">
+        <div class="text">
+          <p><b>เก๋งจีนและเจ้าแม่กวนอิมพันมือ</b><br> ...</p>
+        </div>
+      </div>
+      <div class="image-left">
+        <img src="img/กวนอู.jpg" alt="ศาลเจ้าพ่อกวนอู">
+        <div class="text">
+          <p><b>ศาลเจ้าพ่อกวนอูและพระสังกัจจายน์</b><br> ...</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- โบราณสถาน -->
+    <section>
+      <h2>โบราณสถาน</h2>
+      <div class="image-right">
+        <img src="img/เจดีย์.jpg" alt="เจดีย์เก่า">
+        <div class="text">
+          <p><b>เจดีย์เก่าบนยอดเขา</b><br> ...</p>
+        </div>
+      </div>
+      <div class="image-right">
+        <img src="img/อุโบสถ.jpg" alt="ฐานอุโบสถเก่า">
+        <div class="text">
+          <p><b>ฐานโบราณอุโบสถเก่า</b><br> ...</p>
+        </div>
+      </div>
+      <div class="image-right">
+        <img src="img/ศาลา.jpg" alt="ศาลาจารึก">
+        <div class="text">
+          <p><b>ศาลาจารึกหลักธรรมคำสอนเก่า</b><br> ...</p>
+        </div>
+      </div>
+      <div class="image-right">
+        <img src="img/บาท.jpg" alt="รอยพระพุทธบาทจำลอง">
+        <div class="text">
+          <p><b>รอยพระพุทธบาทจำลอง</b><br> ...</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- สิ่งน่าสนใจอื่นภายในวัด -->
+    <section>
+      <h2>สิ่งน่าสนใจอื่นภายในวัด</h2>
+      <div class="image-left">
+        <img src="img/จุดชม.jpg" alt="จุดชมวิว">
+        <div class="text">
+          <p><b>จุดชมวิวบนเขาตะเกียบ</b><br> ...</p>
+        </div>
+      </div>
+      <div class="image-left">
+        <img src="img/วิวทะเล.jpg" alt="วิวทะเลหัวหิน">
+        <div class="text">
+          <p>วิวทะเลหัวหินจากจุดชมวิวบนยอดเขา เป็นจุดที่นักท่องเที่ยวนิยมถ่ายภาพ ...</p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="contact">
+        ช่องทางการติดต่อ:<br>
+        โทรศัพท์: 0-0000-0000<br>
+        อีเมล: info@example.com
+      </div>
+      <div class="address">
+        ที่อยู่: ต.หนองแก อ.เมืองหัวหิน จ.ประจวบคีรีขันธ์<br>
+        ประเทศไทย
+      </div>
+    </footer>
+  </div>
+</body>
+</html>

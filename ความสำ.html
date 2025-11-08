@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>กิจกรรม - วัดเขาตะเกียบ</title>
+  <style>
+    :root{
+      --pale-yellow:#fff9e6;
+      --accent:#d9c37a;
+      --text:#222;
+      --muted:#555;
+      --max-width:1100px;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family:"Noto Sans Thai","Helvetica",Arial,sans-serif;
+      color:var(--text);
+      background:var(--pale-yellow);
+    }
+
+
+    .wrap{
+      max-width:var(--max-width);
+      margin:24px auto;
+      background:rgba(255,255,255,0.6);
+      border-radius:12px;
+      overflow:hidden;
+      box-shadow:0 6px 18px rgba(0,0,0,0.08);
+    }
+    header{
+      display:flex;
+      flex-direction:column;
+      padding:18px 24px;
+      background:linear-gradient(180deg,var(--pale-yellow),#fff);
+      border-bottom:1px solid rgba(0,0,0,0.04);
+    }
+    .top-row{
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+    }
+    .site-title{font-weight:700;font-size:26px;cursor:pointer;color:var(--text);}
+    nav{
+      display:flex;
+      justify-content:flex-end;
+      gap:15px;
+      margin-top:10px;
+    }
+    nav a{
+      text-decoration:none;
+      color:var(--text);
+      font-weight:600;
+      padding:6px 12px;
+      border-radius:6px;
+    }
+    nav a:hover{background:rgba(217,195,122,0.3);}
+    .banner img{width:100%;height:100%;}
+    section{padding:30px;}
+    h2{text-align:center;color:#004aad;background:#cfe2ff;padding:10px;border-radius:8px;}
+    .gallery{display:flex;justify-content:center;gap:12px;margin:20px 0;}
+    .gallery img{width:30%;height:200px;object-fit:cover;border-radius:10px;}
+    ul.activities-list{max-width:100px;margin:0 auto;font-size:16px;line-height:1.6;color:var(--muted);}
+    ul.activities-list li{margin-bottom:8px;}
+
+    .slideshow-container{
+  position:relative;
+  max-width:800px;
+  margin:30px auto;
+  text-align:center;
+}
+
+.prev, .next{
+  cursor:pointer;
+  position:absolute;
+  top:50%;
+  padding:10px;
+  color:white;
+  font-weight:bold;
+  font-size:20px;
+  user-select:none;
+  background:rgba(0,0,0,0.4);
+  transform:translateY(-50%);
+}
+
+
+    .next{right:0;border-radius:3px 0 0 3px;}
+    .prev:hover,.next:hover{background:rgba(0,0,0,0.7);}
+    footer{
+      background:#fff;
+      border-top:1px solid rgba(0,0,0,0.04);
+      padding:18px 24px;
+      display:flex;
+      justify-content:space-between;
+      flex-wrap:wrap;
+      color:var(--muted);
+      font-size:14px;
+    }
+
+    @media(max-width:900px){
+      .gallery img{width:48%;}
+      .slides img{height:250px;}
+      nav{flex-wrap:wrap;justify-content:center;margin-top:10px;}
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="top-row">
+        <div class="site-title" onclick="location.href='วัดเขา.html'">วัดเขาตะเกียบ</div>
+        <nav>
+          <a href="วัดเขา.html">หน้าแรก</a>
+          <a href="ประวัติ.html">ประวัติ</a>
+          <a href="สถานสำ.html">สถานที่สำคัญ</a>
+          <a href="ความสำ.html">ความสำคัญ</a>
+          <a href="กิจกรรม.html">กิจกรรม</a>
+          <a href="เดินทาง.html">การเดินทาง</a>
+          <a href="ท่องเที่ยว.html">สถานที่ท่องเที่ยว</a>
+        </nav>
+      </div>
+    </header>
+
+
+
+<div class="banner">
+  <img src="img/bnความสำ.png" alt="แบนเนอร์ความสำคัญ">
+</div>
+<div class="container">
+
+    <section class="content-section">
+  <h2>ความสำคัญด้านศาสนาและวัฒนธรรม</h2>
+  <div class="culture-grid">
+    <div class="text">
+      <p>จุดชมวิวบนยอดเขาวัดเขาตะเกียบเป็นสถานที่ศักดิ์สิทธิ์ที่ชาวบ้านและนักท่องเที่ยวให้ความเคารพนับถืออย่างมาก เพราะเป็นที่ประดิษฐานของ พระพุทธรูปปางห้ามสมุทรองค์ใหญ่ ซึ่งเปรียบเสมือนพระประจำเมืองหัวหิน ผู้คนเชื่อว่าหากได้มากราบไหว้จะช่วยให้เกิดความสงบสุข ปัดเป่าความทุกข์ และเสริมสิริมงคลในชีวิต
+
+นอกจากนี้ บนยอดเขายังมี รอยพระพุทธบาทจำลอง และ เจดีย์เก่าแก่ ซึ่งเป็นหลักฐานทางศาสนาแสดงถึงความศรัทธาของชาวบ้านในอดีตกาลที่ร่วมแรงร่วมใจสร้างขึ้นเพื่อเป็นสถานที่ประกอบศาสนกิจ เช่น การสวดมนต์ ทำบุญตักบาตร และเวียนเทียนในวันสำคัญทางพระพุทธศาสนา เช่น วันวิสาขบูชา และวันมาฆบูชา</p>
+      <p>วัดเขาตะเกียบและจุดชมวิวบนยอดเขาเป็นสถานที่ที่สะท้อนถึง วัฒนธรรมการบูชาสิ่งศักดิ์สิทธิ์และการเคารพธรรมชาติของคนไทย
+ทุกปีจะมีการจัดกิจกรรมทางวัฒนธรรมและศาสนา เช่น
+
+พิธีทำบุญขึ้นเขา
+1.การเวียนเทียนรอบพระใหญ่
+2.งานประเพณีสงกรานต์และเข้าพรรษา
+3.การทอดผ้าป่าสามัคคีเพื่อบูรณะสิ่งศักดิ์สิทธิ์บนเขา
+4.กิจกรรมเหล่านี้ช่วยส่งเสริมให้คนรุ่นใหม่ได้เรียนรู้และสืบสาน ขนบธรรมเนียมท้องถิ่นของหัวหิน รวมทั้งเป็นการกระชับความสัมพันธ์ในชุมชนและสร้างความสามัคคีของชาวบ้าน</p>
+    </div>
+    <div class="images-bottom">
+    <img src="img/ศาสนา.jpg" alt="ศาสนาและวัฒนธรรม 1">
+    <img src="img/วัฒนธรรม.jpg" alt="ศาสนาและวัฒนธรรม 2">
+  </div>
+  </div>
+</section>
+<style>
+.images-bottom {
+  display:flex;        /* เรียงรูปเป็นแถว */
+  gap:20px;            /* เว้นช่องว่างระหว่างรูป */
+  margin-top:15px;
+}
+.images-bottom img {
+  width:48%;           /* รูปแต่ละรูปเกือบครึ่งพื้นที่ */
+  border-radius:8px;
+  object-fit:cover;
+}
+</style>
+
+
+  <section class="content-section tourism">
+  <h2>ข้อความสำคัญด้านการท่องเที่ยว</h2>
+  <!-- ข้อ 1 -->
+  <div>
+    <p> <b>1.แหล่งท่องเที่ยวเชิงศาสนาและธรรมชาติ</b><br>
+วัดเขาตะเกียบตั้งอยู่บริเวณชายทะเลหัวหิน จังหวัดประจวบคีรีขันธ์ เป็นจุดที่สามารถชมวิวทะเลได้ทั้งฝั่งเหนือและใต้ เห็นทิวทัศน์ของหาดหัวหินและเขาตะเกียบอย่างสวยงาม โดยเฉพาะช่วงพระอาทิตย์ขึ้นซึ่งเป็น ไฮไลต์สำคัญ ที่นักท่องเที่ยวมักขึ้นมาชมและถ่ายภาพกันอย่างคึกคัก
+นอกจากความงดงามทางธรรมชาติแล้ว วัดยังมี พระพุทธรูปปางห้ามสมุทรองค์ใหญ่ ซึ่งเป็นสัญลักษณ์ประจำวัด และถือเป็นหนึ่งในจุดแลนด์มาร์กของหัวหินที่ดึงดูดนักท่องเที่ยวจากทั่วประเทศให้มาสักการะและเก็บภาพความประทับใจ</p>
+  </div>
+  <!-- ข้อ 2 -->
+  <div>
+    <p> <b>2. ส่งเสริมการท่องเที่ยวเชิงวัฒนธรรมและจิตวิญญาณ</b><br>
+การเดินทางมาวัดเขาตะเกียบไม่เพียงเพื่อพักผ่อนเท่านั้น แต่ยังเป็นการท่องเที่ยวที่ผสมผสานระหว่าง ความงามทางธรรมชาติกับความสงบทางใจ
+นักท่องเที่ยวจำนวนมากนิยมขึ้นมานั่งสมาธิ ชมวิว หรือกราบพระเพื่อเสริมสิริมงคล โดยเฉพาะในช่วงเทศกาลสำคัญ เช่น วันปีใหม่ วันมาฆบูชา หรือวันสงกรานต์ จะมีประชาชนและนักท่องเที่ยวเดินทางมาทำบุญเป็นจำนวนมาก
+นอกจากนี้ ยังมี กิจกรรมทำบุญ ขึ้นเขา ปล่อยนก ปล่อยปลา และเวียนเทียน ซึ่งช่วยดึงดูดนักท่องเที่ยวเชิงศาสนาให้เข้ามามีส่วนร่วม และเรียนรู้วัฒนธรรมท้องถิ่นของชาวหัวหิน
+</p>
+  </div>
+  <!-- ข้อ 3 -->
+  <div>
+    <p> <b>3. เป็นจุดเชื่อมโยงแหล่งท่องเที่ยวสำคัญของหัวหิน</b><br>
+วัดเขาตะเกียบตั้งอยู่ใกล้กับสถานที่ท่องเที่ยวสำคัญอื่น ๆ เช่น
+1.หาดเขาตะเกียบ
+2.ตลาดน้ำหัวหินสามพันนาม
+3.ตลาดซิเคด้า (Cicada Market)
+4.วัดถ้ำเขาเต่า
+ทำให้วัดกลายเป็นหนึ่งในเส้นทางท่องเที่ยวหลักของนักเดินทางที่มาเยือนหัวหิน และเป็นจุดเชื่อมโยงทั้งทางวัฒนธรรมและเศรษฐกิจให้กับพื้นที่โดยรอบ</p>
+  <!-- ข้อ 4 -->
+  <div>
+    <p><b>4. สร้างรายได้และกระตุ้นเศรษฐกิจในท้องถิ่น</b><br>
+การท่องเที่ยววัดเขาตะเกียบช่วยสร้างรายได้ให้กับชุมชนรอบ ๆ ผ่านกิจกรรมต่าง ๆ เช่น
+ร้านขายของที่ระลึก
+ร้านอาหารและกาแฟบริเวณเชิงเขา
+บริการนำเที่ยวและถ่ายภาพ
+ที่พักและโฮมสเตย์ใกล้ชายหาด
+สิ่งเหล่านี้ส่งผลให้ชาวบ้านมีอาชีพเสริมและเกิดการหมุนเวียนของเศรษฐกิจในพื้นที่อย่างต่อเนื่อง</p>
+  </div>
+</section>
+<footer>
+  <div class="contact">
+    ช่องทางการติดต่อ:<br>
+    โทรศัพท์: 0-0000-0000<br>
+    อีเมล: info@example.com
+  </div>
+  <div class="address">
+    ที่อยู่: ต.หนองแก อ.เมืองหัวหิน จ.ประจวบคีรีขันธ์<br>
+    ประเทศไทย
+  </div>
+</footer>
+
+<script>
+function goHome(){ window.location.href="วัดเขา.html"; }
+</script>
+
+</body>
+</html>

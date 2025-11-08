@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>กิจกรรม - วัดเขาตะเกียบ</title>
+  <style>
+    :root {
+      --pale-yellow:#fff9e6;
+      --accent:#d9c37a;
+      --text:#222;
+      --muted:#555;
+      --max-width:1100px;
+    }
+    *{box-sizing:border-box}
+    body {
+      margin:0;
+      font-family:"Noto Sans Thai","Helvetica",Arial,sans-serif;
+      color:var(--text);
+      background:var(--pale-yellow);
+    }
+    .wrap {
+      max-width:var(--max-width);
+      margin:24px auto;
+      background:rgba(255,255,255,0.6);
+      border-radius:12px;
+      overflow:hidden;
+      box-shadow:0 6px 18px rgba(0,0,0,0.08);
+    }
+    header {
+      display:flex;
+      flex-direction:column;
+      padding:18px 24px;
+      background:linear-gradient(180deg,var(--pale-yellow),#fff);
+      border-bottom:1px solid rgba(0,0,0,0.04);
+    }
+    .top-row {
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+    }
+    .site-title {
+      font-weight:700;
+      font-size:26px;
+      cursor:pointer;
+      color:var(--text);
+    }
+    nav {
+      display:flex;
+      justify-content:flex-end;
+      gap:15px;
+      margin-top:10px;
+    }
+    nav a {
+      text-decoration:none;
+      color:var(--text);
+      font-weight:600;
+      padding:6px 12px;
+      border-radius:6px;
+    }
+    nav a:hover {background:rgba(217,195,122,0.3);}
+    .banner img {
+      width:100%;
+      height:auto;
+      object-fit:cover;
+      display:block;
+    }
+    section {padding:30px;}
+    h2 {
+      text-align:center;
+      color:#004aad;
+      background:#cfe2ff;
+      padding:10px;
+      border-radius:8px;
+    }
+    .gallery {
+      display:flex;
+      justify-content:center;
+      gap:12px;
+      margin:20px 0;
+    }
+    .gallery img {
+      width:30%;
+      height:200px;
+      object-fit:cover;
+      border-radius:10px;
+    }
+    .activity-item {
+      margin-bottom:15px;
+      text-indent:0;
+    }
+    .activity-item b {color:#004aad;}
+    .slideshow-container {
+      position:relative;
+      max-width:800px;
+      margin:30px auto;
+      text-align:center;
+    }
+    .slides img {
+      width:100%;
+      height:auto;
+      border-radius:10px;
+    }
+    /* ปุ่มเลื่อนภาพ */
+    .prev, .next {
+      cursor:pointer;
+      position:absolute;
+      top:50%;
+      padding:10px 14px;
+      color:white;
+      font-weight:bold;
+      font-size:22px;
+      user-select:none;
+      background:rgba(0,0,0,0.4);
+      transform:translateY(-50%);
+      z-index:10;
+    }
+    .prev {
+      left:0;
+      border-radius:0 6px 6px 0;
+    }
+    .next {
+      right:0;
+      border-radius:6px 0 0 6px;
+    }
+    .prev:hover, .next:hover {
+      background:rgba(0,0,0,0.7);
+    }
+    footer {
+      background:#fff;
+      border-top:1px solid rgba(0,0,0,0.04);
+      padding:14px 24px;
+      display:flex;
+      justify-content:space-between;
+      flex-wrap:wrap;
+      color:var(--muted);
+      font-size:14px;
+      line-height:1.2;
+    }
+    footer p, footer div {
+      margin:0;
+      line-height:1.3;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="top-row">
+        <div class="site-title" onclick="location.href='วัดเขา.html'">วัดเขาตะเกียบ</div>
+        <nav>
+          <a href="วัดเขา.html">หน้าแรก</a>
+          <a href="ประวัติ.html">ประวัติ</a>
+          <a href="สถานสำ.html">สถานที่สำคัญ</a>
+          <a href="ความสำ.html">ความสำคัญ</a>
+          <a href="กิจกรรม.html">กิจกรรม</a>
+          <a href="เดินทาง.html">การเดินทาง</a>
+          <a href="ท่องเที่ยว.html">สถานที่ท่องเที่ยว</a>
+        </nav>
+      </div>
+    </header>
+
+    <div class="banner">
+      <img src="img/bnกิจ.png" alt="แบนเนอร์กิจกรรมวัดเขาตะเกียบ">
+    </div>
+
+    <section>
+      <h2>กิจกรรมที่ผู้คนนิยมทำภายในวัด</h2>
+      <div class="gallery">
+        <img src="img/กิจ1.jpg" alt="กิจกรรม1">
+        <img src="img/กิจ2.jpg" alt="กิจกรรม2">
+        <img src="img/กิจ3.jpg" alt="กิจกรรม3">
+      </div>
+
+      <div class="activity-item"><b>1. ไหว้ขอพร:</b> สักการะพระพุทธรูปและสิ่งศักดิ์สิทธิ์เพื่อความเป็นสิริมงคล</div>
+      <div class="activity-item"><b>2. ชมวิวและถ่ายรูป:</b> ชมวิวทะเลหัวหินแบบ 360 องศา</div>
+      <div class="activity-item"><b>3. ให้อาหารลิง:</b> ผู้คนนิยมให้อาหารลิงที่อาศัยอยู่บริเวณวัด</div>
+      <div class="activity-item"><b>4. ตีระฆัง:</b> สัญลักษณ์แห่งการขับไล่สิ่งไม่ดีและการถวายพุทธบูชา</div>
+      <div class="activity-item"><b>5. เติมน้ำมันตะเกียง:</b> เชื่อว่าเป็นการเสริมแสงสว่างให้ชีวิต</div>
+      <div class="activity-item"><b>6. เรียนรู้วัฒนธรรมไทย:</b> ชมสถาปัตยกรรมและวัฒนธรรมท้องถิ่น</div>
+    </section>
+
+    <section>
+      <h2>ภาพบรรยากาศของวัด</h2>
+      <div class="slideshow-container">
+        <div class="slides"><img src="img/กรรม1.jpg" alt="ภาพบรรยากาศ 1"></div>
+        <div class="slides"><img src="img/กรรม2.jpg" alt="ภาพบรรยากาศ 2"></div>
+        <div class="slides"><img src="img/กรรม3.jpg" alt="ภาพบรรยากาศ 3"></div>
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+    </section>
+
+    <footer>
+      <div class="contact">
+        ช่องทางการติดต่อ:<br>
+        โทรศัพท์: 0-0000-0000<br>
+        อีเมล: info@example.com
+      </div>
+      <div class="address">
+        ที่อยู่: ต.หนองแก อ.เมืองหัวหิน จ.ประจวบคีรีขันธ์<br>
+        ประเทศไทย
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+    function plusSlides(n){ showSlides(slideIndex += n); }
+    function showSlides(n){
+      let slides = document.getElementsByClassName("slides");
+      if(n > slides.length){slideIndex = 1}
+      if(n < 1){slideIndex = slides.length}
+      for(let i=0;i<slides.length;i++){slides[i].style.display="none";}
+      slides[slideIndex-1].style.display="block";
+    }
+  </script>
+</body>
+</html>

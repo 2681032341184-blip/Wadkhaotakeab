@@ -1,0 +1,272 @@
+<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>การเดินทาง - วัดเขาตะเกียบ</title>
+  <style>
+    :root {
+      --pale-yellow: #fff9e6;
+      --accent: #d9c37a;
+      --text: #222;
+      --muted: #555;
+      --max-width: 1100px;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "Noto Sans Thai", "Helvetica", Arial, sans-serif;
+      color: var(--text);
+      background: var(--pale-yellow);
+    }
+
+    .wrap {
+      max-width: var(--max-width);
+      margin: 24px auto;
+      background: rgba(255, 255, 255, 0.6);
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+    }
+
+    header {
+      display: flex;
+      flex-direction: column;
+      padding: 18px 24px;
+      background: linear-gradient(180deg, var(--pale-yellow), #fff);
+      border-bottom: 1px solid rgba(0,0,0,0.04);
+    }
+
+    .top-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .site-title {
+      font-weight: 700;
+      font-size: 26px;
+      cursor: pointer;
+      color: var(--text);
+    }
+
+    nav {
+      display: flex;
+      justify-content: flex-end;
+      gap: 15px;
+      margin-top: 10px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: var(--text);
+      font-weight: 600;
+      padding: 6px 12px;
+      border-radius: 6px;
+    }
+
+    nav a:hover { background: rgba(217,195,122,0.3); }
+
+    .banner img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    section { padding: 30px; }
+
+    h2 {
+      text-align: center;
+      color: #004aad;
+      background: #cfe2ff;
+      padding: 10px;
+      border-radius: 8px;
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 1.7;
+    }
+
+    .map-container {
+      display: flex;
+      justify-content: center;
+      margin: 30px 0;
+    }
+
+    .map-container iframe {
+      width: 90%;
+      height: 500px;
+      border: none;
+      border-radius: 15px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    }
+
+    .travel-method {
+      display: flex;
+      align-items: center;
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      margin-bottom: 20px;
+      overflow: hidden;
+    }
+
+    .travel-method img {
+      width: 220px;
+      height: 160px;
+      object-fit: cover;
+    }
+
+    .travel-method div {
+      padding: 20px;
+      flex: 1;
+    }
+
+    .travel-method h3 {
+      margin: 0 0 10px;
+      color: var(--accent);
+    }
+
+    /* ฟุตเตอร์ปรับให้เหมือนหน้ากิจกรรม */
+    footer {
+      background: #fff;
+      border-top: 1px solid rgba(0,0,0,0.04);
+      padding: 12px 24px;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      color: #555;
+      font-size: 13px;
+      line-height: 1.2;
+    }
+    footer h3 {
+      color: var(--accent);
+      margin: 0 0 3px 0;
+      font-size: 14px;
+    }
+    footer p {
+      margin: 0;
+      padding: 0;
+    }
+
+    @media (max-width: 900px) {
+      .travel-method {
+        flex-direction: column;
+      }
+      .travel-method img {
+        width: 100%;
+        height: 200px;
+      }
+      .map-container iframe {
+        width: 100%;
+        height: 400px;
+      }
+      footer {
+        flex-direction: column;
+        text-align: center;
+      }
+      footer div {
+        width: 100%;
+        margin-bottom: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="top-row">
+        <div class="site-title" onclick="location.href='วัดเขา.html'">วัดเขาตะเกียบ</div>
+        <nav>
+          <a href="วัดเขา.html">หน้าแรก</a>
+          <a href="ประวัติ.html">ประวัติ</a>
+          <a href="สถานสำ.html">สถานที่สำคัญ</a>
+          <a href="ความสำ.html">ความสำคัญ</a>
+          <a href="กิจกรรม.html">กิจกรรม</a>
+          <a href="เดินทาง.html">การเดินทาง</a>
+          <a href="ท่องเที่ยว.html">สถานที่ท่องเที่ยว</a>
+        </nav>
+      </div>
+    </header>
+
+    <div class="banner">
+      <img src="img/bnเดินทาง.png" alt="แบนเนอร์การเดินทาง">
+    </div>
+
+    <section>
+      <h2>ที่ตั้งของวัดเขาตะเกียบ</h2>
+      <p>วัดเขาตะเกียบ ตั้งอยู่ที่ตำบลหนองแก อำเภอหัวหิน จังหวัดประจวบคีรีขันธ์ 
+      อยู่บริเวณเชิงเขาตะเกียบ ใกล้ชายหาดตะเกียบ ห่างจากตัวเมืองหัวหินประมาณ 5 กิโลเมตร</p>
+
+      <div class="map-container">
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3875.243968189648!2d99.99840767478312!3d12.52070882599081!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30fbb5271836d0f1%3A0x9a54a8e78eb5ad8!2z4Lin4Lix4LiU4LmA4LiV4Liz4LiB4Liy4LmE4Liq4LiZ4Li44LiH4LmA4Lif4Li04LiX4LiE4LmM!5e0!3m2!1sth!2sth!4v1730240000000!5m2!1sth!2sth" 
+          allowfullscreen="" 
+          loading="lazy" 
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </section>
+
+    <section>
+      <h2>วิธีการเดินทางไปวัดเขาตะเกียบ</h2>
+
+      <div class="travel-method">
+        <img src="img/ยน.jpg" alt="รถยนต์ส่วนตัว">
+        <div>
+          <h3>1. รถยนต์ส่วนตัว</h3>
+          <p>ขับรถจากตัวเมืองหัวหินมาตามถนนเพชรเกษม จากนั้นเลี้ยวเข้าถนนหัวหิน 87 
+          และตรงไปจนถึงวัดเขาตะเกียบ ใช้เวลาเดินทางประมาณ 10 นาที</p>
+        </div>
+      </div>
+
+      <div class="travel-method">
+        <img src="img/สองแถว.jpg" alt="รถสองแถวสายหัวหิน–ตะเกียบ">
+        <div>
+          <h3>2. รถสองแถว (สายหัวหิน–ตะเกียบ)</h3>
+          <p>ขึ้นรถสองแถวสีเขียวจากตลาดหัวหิน ปลายทางวัดเขาตะเกียบ ค่าบริการประมาณ 10–15 บาท</p>
+        </div>
+      </div>
+
+      <div class="travel-method">
+        <img src="img/แท้ก.jpg" alt="แท็กซี่">
+        <div>
+          <h3>3. แท็กซี่หรือ Grab</h3>
+          <p>สามารถเรียกบริการแท็กซี่หรือ Grab จากตัวเมืองหัวหินได้ ใช้เวลาประมาณ 10 นาที</p>
+        </div>
+      </div>
+
+      <div class="travel-method">
+        <img src="img/วินมอ.jpg" alt="มอไซรับจ้าง">
+        <div>
+          <h3>4. มอเตอร์ไซรับจ้าง</h3>
+          <p>เหมาะสำหรับผู้ที่ต้องการความสะดวกสบายและเดินทางรวดเร็ว ค่าโดยสารประมาณ 30–40 บาท</p>
+        </div>
+      </div>
+
+     <div class="travel-method">
+        <img src="img/มอไซ.jpg" alt="เช่ารถมอเตอร์ไซค์">
+        <div>
+          <h3>5. เช่ารถมอเตอร์ไซค์</h3>
+          <p>นักท่องเที่ยวสามารถเช่ารถมอเตอร์ไซค์ในหัวหินเพื่อขับไปเที่ยววัดได้ ค่าเช่าประมาณ 200–300 บาทต่อวัน</p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="contact">
+        <h3>ช่องทางการติดต่อ</h3>
+        โทร: 032-513-000<br>
+        Facebook: วัดเขาตะเกียบ หัวหิน<br>
+        Email: watkhaotakiab@gmail.com
+      </div>
+      <div class="address">
+        <h3>ที่อยู่</h3>
+        เลขที่ 123 หมู่ 1 ถนนตะเกียบ ตำบลหนองแก<br>
+        อำเภอหัวหิน จังหวัดประจวบคีรีขันธ์ 77110
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
